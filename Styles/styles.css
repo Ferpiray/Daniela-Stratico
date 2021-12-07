@@ -1,0 +1,322 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: initial;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+#navbarNav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#hero, #headerServicios {
+  background-size: cover;
+  height: 100vh;
+}
+
+#hero nav, #headerServicios nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+#hero nav .logoEncabezado, #headerServicios nav .logoEncabezado {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #707070;
+  padding: 5rem;
+  padding-top: 4rem;
+}
+
+#hero nav ul, #headerServicios nav ul {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero nav ul a, #headerServicios nav ul a {
+  text-align: center;
+  font-size: 13px;
+  margin-left: 3rem;
+  color: #707070;
+  display: inline-block;
+}
+
+#hero nav ul a span, #headerServicios nav ul a span {
+  display: block;
+}
+
+#hero nav ul a:hover, #headerServicios nav ul a:hover {
+  color: #850085;
+  border-bottom: solid 1px #850085;
+}
+
+#hero div h1, #headerServicios div h1 {
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-bottom: 2rem;
+  color: #707070;
+  font-size: 65px;
+  font-weight: normal;
+}
+
+.informate {
+  margin-left: 10rem;
+  color: white;
+  background-color: #850085;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.desarrolloSostenible {
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desarrolloSostenible .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 650px;
+}
+
+.desarrolloSostenible .banner img {
+  width: 100%;
+}
+
+.desarrolloSostenible .logos {
+  overflow: hidden;
+  max-width: 2200px;
+}
+
+.desarrolloSostenible .logos img {
+  position: relative;
+  -webkit-animation-name: movimientoLateral;
+          animation-name: movimientoLateral;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.infoPersonal {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.infoPersonal .contenedorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoPersonal .contenedorInfo .contenedorFoto img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.infoPersonal .contenedorInfo h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #707070;
+}
+
+.infoPersonal .contenedorInfo p {
+  color: #707070;
+}
+
+.infoPersonal .contenedorInfo .redes {
+  background-color: #850085;
+}
+
+.infoPersonal .contenedorInfo .redes div {
+  padding: 0.3rem;
+  border: 0.1px solid white;
+}
+
+.infoPersonal .about {
+  color: #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+}
+
+.infoPersonal .about h4 {
+  color: #707070;
+}
+
+.infoPersonal .about h4 span {
+  color: #850085;
+}
+
+@media all and (min-width: 768px) {
+  .infoPersonal .about {
+    padding: 5rem 7rem;
+  }
+}
+
+.infoPersonal .about a {
+  color: #850085;
+  border: 1px solid #850085;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #575656;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer h3, footer h6 {
+  color: #fff;
+}
+
+@-webkit-keyframes movimientoLateral {
+  from {
+    left: 0;
+  }
+  to {
+    left: -1914px;
+  }
+}
+
+@keyframes movimientoLateral {
+  from {
+    left: 0;
+  }
+  to {
+    left: -1914px;
+  }
+}
+
+#fondo1 {
+  background-image: url(../media/fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+#fondo1 h1 {
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-bottom: 0.5rem;
+  color: #707070;
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+#fondo2 {
+  background-image: url(../media/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+#fondo2 h2 {
+  position: absolute;
+  right: 0;
+  padding-top: 3.5rem;
+  padding-right: 15rem;
+  color: #707070;
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+#parrafoFondo1 {
+  padding-left: 10rem;
+  width: 40rem;
+}
+
+#parrafoFondo2 {
+  position: absolute;
+  right: 0;
+  bottom: 19rem;
+  padding-right: 10rem;
+  width: 45rem;
+}
+
+#headerServicios {
+  height: 100vh;
+  background-image: url(../media/puzzle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headerServicios .info {
+  width: 600px;
+  max-width: 100%;
+}
+
+#headerServicios .info h1 {
+  padding: 4rem 0 0;
+  font-size: 4em;
+}
+
+#fotoAbout {
+  width: 500px;
+  max-width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
