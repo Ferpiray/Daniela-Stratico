@@ -1,3 +1,8 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,7 +78,6 @@ body {
 
 #hero div h1, #headerServicios div h1 {
   padding-top: 5rem;
-  padding-left: 10rem;
   padding-bottom: 2rem;
   color: #707070;
   font-size: 65px;
@@ -139,14 +143,14 @@ body {
 }
 
 .infoPersonal {
+  margin: 1rem auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 10rem;
 }
 
 .infoPersonal .contenedorInfo {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,8 +166,12 @@ body {
           align-items: center;
 }
 
+.infoPersonal .contenedorInfo .contenedorFoto {
+  padding: 1.5rem !important;
+}
+
 .infoPersonal .contenedorInfo .contenedorFoto img {
-  width: 500px;
+  width: 600px;
   max-width: 100%;
 }
 
@@ -187,6 +195,7 @@ body {
 }
 
 .infoPersonal .about {
+  padding: 1rem !important;
   color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +226,78 @@ body {
   border: 1px solid #850085;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+}
+
+.infoDani {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.infoDani h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #575656;
+}
+
+.infoDani h5 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #575656;
+}
+
+.infoDani h6 {
+  font-size: 1rem;
+  color: #928f8f;
+}
+
+.infoDani svg {
+  margin: 1rem;
+}
+
+#experiencia {
+  margin: 1rem;
+}
+
+#experiencia h2 {
+  color: #575656;
+}
+
+#experiencia .textoExperiencia {
+  padding: 1.5rem;
+}
+
+#experiencia .textoExperiencia h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #992976;
+}
+
+#experiencia .textoExperiencia h3 .numeroAños {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.detalleServicios {
+  background-color: #f5f5f5;
+  padding: 4rem 1rem;
+}
+
+.detalleServicios h3 {
+  color: #575656;
+  margin: 2rem;
+}
+
+.detalleServicios p {
+  color: #928f8f;
+  margin-left: 5rem;
 }
 
 footer {
@@ -308,15 +389,17 @@ footer h3, footer h6 {
 #headerServicios .info {
   width: 600px;
   max-width: 100%;
+  padding: 2rem;
 }
 
 #headerServicios .info h1 {
-  padding: 4rem 0 0;
-  font-size: 4em;
+  color: #575656;
+  padding-top: 4rem;
+  font-size: 4rem;
 }
 
 #fotoAbout {
-  width: 500px;
+  width: 400px;
   max-width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
